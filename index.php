@@ -1,4 +1,4 @@
-<?php get_header(); consoleLog('Hello there');?>
+<?php get_header(); ?>
 
 <div id="vseen">
   <a class="vseen-logo" href="#"><img src="<?= get_theme_file_uri('/images/VSEEN-LOGO-WHITE.png'); ?>"
