@@ -1,0 +1,323 @@
+/*** BASE: START ***/
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.section {
+	height: 100vh;
+	background-color: #000;
+
+	.other-header {
+		display: flex;
+		flex-flow: column nowrap;
+		height: 15%;
+		// border: 1px solid red;
+		.btn-back {
+			font-size: 3.5rem;
+			color: #fff;
+			margin: 10px 0 0 10px;
+		}
+
+		img {
+			width: 30%;
+			align-self: center;
+			margin-top: 3rem;
+		}
+	}
+
+	.heading {
+		// border: 1px solid yellow;
+		.service-name {
+			position: relative;
+			top: 5px;
+			color: #fff;
+			font-size: 1.6rem;
+			margin-left: 8%;
+		}
+
+		hr {
+			width: 93%;
+			opacity: 0.5;
+		}
+	}
+}
+/*** BASE: END ***/
+
+/*** NAVBAR: START ***/
+header {
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar {
+	overflow: hidden;
+	position: absolute;
+	svg {
+		padding: 20px;
+	}
+}
+
+.side-nav {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: #eeeeef;
+	overflow-x: hidden;
+	transition: 0.5s;
+	// align-items: center;
+
+	.btn-close {
+		font-size: 3.5rem;
+	}
+
+	input {
+		margin-top: 0.5rem;
+		margin-bottom: 1.5rem;
+		padding-left: 1rem;
+		width: 80%;
+		height: 3rem;
+		font-size: 2rem;
+		border-radius: 2rem;
+		align-self: center;
+	}
+
+	h2 {
+		margin-left: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 3rem;
+	}
+
+	li {
+		margin-bottom: 1.8rem;
+	}
+
+	a {
+		padding: 10px;
+		text-decoration: none;
+		font-size: 2rem;
+		color: #a0a0a0;
+		transition: 0.3s;
+	}
+
+	a:hover {
+		color: #da1c85;
+	}
+}
+/*** NAVBAR: END ***/
+
+/*** HOMEPAGE: START ***/
+.root {
+	width: 100%;
+}
+
+#vseen {
+	display: flex;
+	height: 50vh;
+	background-color: #000;
+	justify-content: center;
+	align-items: center;
+
+	.vseen-logo {
+		display: flex;
+		justify-content: center;
+		width: 90%;
+		img {
+			width: 55%;
+		}
+	}
+}
+
+#village {
+	display: flex;
+	height: 50vh;
+	background-color: #fff;
+	justify-content: center;
+	align-items: center;
+
+	.village-logo {
+		display: flex;
+		justify-content: center;
+		width: 90%;
+		img {
+			width: 55%;
+		}
+	}
+}
+/*** HOMEPAGE: END ***/
+
+/*** SERVICES PAGE: START ***/
+.icons-container {
+	display: flex;
+	height: 40%;
+	position: relative;
+	top: 2rem;
+
+	.icon-set {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+
+		.icon-box {
+			display: flex;
+			text-align: center;
+			flex-flow: column nowrap;
+			align-items: center;
+			border: 2px yellow solid;
+			.icon {
+				width: 55%;
+				background-color: #da1c85;
+				margin-top: 20px;
+				border-radius: 50%;
+			}
+			.caption {
+				font-size: 1.5rem;
+				font-weight: 600;
+				border: 1px greenyellow solid;
+				color: #fff;
+			}
+		}
+	}
+}
+
+/*** SERVICES PAGE: END ***/
+
+/*** PROJECTS PAGE: START ***/
+
+.projects-container {
+	// border: 2px dotted red;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 90%;
+	height: 76%;
+	margin: 0 auto;
+	overflow-y: auto;
+
+	.project {
+		// border: 1px solid yellow;
+		margin-bottom: 10px;
+		flex: 0 0 80%;
+
+		.project-title {
+			color: #da1c85;
+		}
+
+		.client-name {
+			color: #fff;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/*** PROJECTS PAGE: END ***/
+
+/************************** MEDIA QUERIES **************************/
+
+/*** iPhone 6/7/8/ media query ***/
+@media only screen and (min-width: 375px) {
+	.icons-container {
+		height: 50vh !important;
+	}
+}
+/*** iPhone 6/7/8 media query ***/
+
+/*** Iphone 6/7/8 Plus ***/
+// @media only screen and (min-width: 414px) {
+// 	.icons-container {
+// 		// height: 80vh !important;
+
+// 		.icon {
+// 			// max-width: 40% !important;
+// 		}
+// 	}
+// }
+/*** Iphone 6/7/8 Plus ***/
+
+/*** iPad ***/
+@media only screen and (min-width: 768px) {
+	.icons-container {
+		height: 70vh !important;
+
+		.icon-box {
+			// width: 50%;
+			.icon {
+				// max-width: 60% !important;
+			}
+		}
+	}
+
+	// .projects-container {
+	// 	.projects {
+	// 		img {
+	// 			width: 80%;
+	// 		}
+	// 	}
+	// }
+}
+/*** iPad ***/
+
+/*** iPad Pro ***/
+@media only screen and (min-width: 1024px) {
+	.icons-container {
+		height: 80vh !important;
+		.icon {
+			max-width: 70% !important;
+		}
+		.caption {
+			font-size: 2.5rem !important;
+		}
+	}
+}
+/*** iPad Pro ***/
+
+/*** Desktop ***/
+@media only screen and (min-width: 1500px) {
+	.other-header {
+		img {
+			width: 25% !important;
+		}
+	}
+	.icons-container {
+		height: 75vh !important;
+		// justify-content: space-evenly !important;
+		// align-content: space-between !important;
+
+		.icon-set {
+			width: 40% !important;
+			// align-self: self-start !important;
+			.icon-box {
+				width: 50% !important;
+				.icon {
+					max-width: 30% !important;
+				}
+				.caption {
+					font-size: 1.8rem !important;
+				}
+			}
+		}
+	}
+}
+/*** Desktop ***/

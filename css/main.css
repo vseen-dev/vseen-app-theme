@@ -1,0 +1,356 @@
+/*** BASE: START ***/
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section {
+  height: 100vh;
+  background-color: #000;
+}
+
+.section .other-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  height: 15%;
+}
+
+.section .other-header .btn-back {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 10px 0 0 10px;
+}
+
+.section .other-header img {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 3rem;
+}
+
+.section .heading .service-name {
+  position: relative;
+  top: 5px;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: 8%;
+}
+
+.section .heading hr {
+  width: 93%;
+  opacity: 0.5;
+}
+
+/*** BASE: END ***/
+/*** NAVBAR: START ***/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar {
+  overflow: hidden;
+  position: absolute;
+}
+
+.navbar svg {
+  padding: 20px;
+}
+
+.side-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #eeeeef;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.side-nav .btn-close {
+  font-size: 3.5rem;
+}
+
+.side-nav input {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  width: 80%;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.side-nav h2 {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 3rem;
+}
+
+.side-nav li {
+  margin-bottom: 1.8rem;
+}
+
+.side-nav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #a0a0a0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #da1c85;
+}
+
+/*** NAVBAR: END ***/
+/*** HOMEPAGE: START ***/
+.root {
+  width: 100%;
+}
+
+#vseen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  background-color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#vseen .vseen-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+#vseen .vseen-logo img {
+  width: 55%;
+}
+
+#village {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#village .village-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+#village .village-logo img {
+  width: 55%;
+}
+
+/*** HOMEPAGE: END ***/
+/*** SERVICES PAGE: START ***/
+.icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40%;
+  position: relative;
+  top: 2rem;
+}
+
+.icons-container .icon-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.icons-container .icon-set .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px yellow solid;
+}
+
+.icons-container .icon-set .icon-box .icon {
+  width: 55%;
+  background-color: #da1c85;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.icons-container .icon-set .icon-box .caption {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px greenyellow solid;
+  color: #fff;
+}
+
+/*** SERVICES PAGE: END ***/
+/*** PROJECTS PAGE: START ***/
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 76%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.projects-container .project {
+  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+
+.projects-container .project .project-title {
+  color: #da1c85;
+}
+
+.projects-container .project .client-name {
+  color: #fff;
+}
+
+.projects-container .project img {
+  width: 100%;
+}
+
+/*** PROJECTS PAGE: END ***/
+/************************** MEDIA QUERIES **************************/
+/*** iPhone 6/7/8/ media query ***/
+@media only screen and (min-width: 375px) {
+  .icons-container {
+    height: 50vh !important;
+  }
+}
+
+/*** iPhone 6/7/8 media query ***/
+/*** Iphone 6/7/8 Plus ***/
+/*** Iphone 6/7/8 Plus ***/
+/*** iPad ***/
+@media only screen and (min-width: 768px) {
+  .icons-container {
+    height: 70vh !important;
+  }
+}
+
+/*** iPad ***/
+/*** iPad Pro ***/
+@media only screen and (min-width: 1024px) {
+  .icons-container {
+    height: 80vh !important;
+  }
+  .icons-container .icon {
+    max-width: 70% !important;
+  }
+  .icons-container .caption {
+    font-size: 2.5rem !important;
+  }
+}
+
+/*** iPad Pro ***/
+/*** Desktop ***/
+@media only screen and (min-width: 1500px) {
+  .other-header img {
+    width: 25% !important;
+  }
+  .icons-container {
+    height: 75vh !important;
+  }
+  .icons-container .icon-set {
+    width: 40% !important;
+  }
+  .icons-container .icon-set .icon-box {
+    width: 50% !important;
+  }
+  .icons-container .icon-set .icon-box .icon {
+    max-width: 30% !important;
+  }
+  .icons-container .icon-set .icon-box .caption {
+    font-size: 1.8rem !important;
+  }
+}
+
+/*** Desktop ***/
