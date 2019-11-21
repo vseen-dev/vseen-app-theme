@@ -1,7 +1,9 @@
 <?php
 
 function vseen_files() {
-  wp_enqueue_style('vseen_main_styles', get_stylesheet_uri());
+  wp_enqueue_script( 'vseen_main_scripts', get_theme_file_uri('/js/scripts.js'), NULL, microtime(), true);
+  wp_enqueue_style('normalize_css', '//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+  wp_enqueue_style('vseen_main_styles', get_stylesheet_uri(), NULL, microtime());
 }
 
 add_action('wp_enqueue_scripts', 'vseen_files');
