@@ -17,12 +17,15 @@ li {
   list-style-type: none;
 }
 
-.section {
+#vseen-section,
+#vpm-section,
+section {
   height: 100vh;
-  background-color: #000;
 }
 
-.section .other-header {
+#vseen-section .other-header,
+#vpm-section .other-header,
+section .other-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,13 +36,17 @@ li {
   height: 15%;
 }
 
-.section .other-header .btn-back {
+#vseen-section .other-header .btn-back,
+#vpm-section .other-header .btn-back,
+section .other-header .btn-back {
   font-size: 3.5rem;
   color: #fff;
-  margin: 10px 0 0 10px;
+  margin: 20px 0 0 10px;
 }
 
-.section .other-header img {
+#vseen-section .other-header img,
+#vpm-section .other-header img,
+section .other-header img {
   width: 30%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -47,7 +54,9 @@ li {
   margin-top: 3rem;
 }
 
-.section .heading .service-name {
+#vseen-section .heading .service-name,
+#vpm-section .heading .service-name,
+section .heading .service-name {
   position: relative;
   top: 5px;
   color: #fff;
@@ -55,7 +64,9 @@ li {
   margin-left: 8%;
 }
 
-.section .heading hr {
+#vseen-section .heading hr,
+#vpm-section .heading hr,
+section .heading hr {
   width: 93%;
   opacity: 0.5;
 }
@@ -140,8 +151,44 @@ header {
   color: #da1c85;
 }
 
-/*** NAVBAR: END ***/
-/*** HOMEPAGE: START ***/
+/*** PROJECTS PAGE: START ***/
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 76%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.projects-container .project {
+  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+
+.projects-container .project .project-title {
+  color: #da1c85;
+}
+
+.projects-container .project .client-name {
+  color: #fff;
+}
+
+.projects-container .project img {
+  width: 100%;
+}
+
+/*** PROJECTS PAGE: END ***/
 .root {
   width: 100%;
 }
@@ -202,9 +249,11 @@ header {
   width: 55%;
 }
 
-/*** HOMEPAGE: END ***/
-/*** SERVICES PAGE: START ***/
-.icons-container {
+#vpm-section {
+  background-color: #fff;
+}
+
+#vpm-section .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +262,7 @@ header {
   top: 2rem;
 }
 
-.icons-container .icon-set {
+#vpm-section .icons-container .icon-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +279,7 @@ header {
   width: 50%;
 }
 
-.icons-container .icon-set .icon-box {
+#vpm-section .icons-container .icon-set .icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,62 +291,82 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px yellow solid;
 }
 
-.icons-container .icon-set .icon-box .icon {
+#vpm-section .icons-container .icon-set .icon-box .icon {
   width: 55%;
-  background-color: #da1c85;
   margin-top: 20px;
   border-radius: 50%;
 }
 
-.icons-container .icon-set .icon-box .caption {
+#vpm-section .icons-container .icon-set .icon-box .caption {
   font-size: 1.5rem;
   font-weight: 600;
-  border: 1px greenyellow solid;
-  color: #fff;
+  color: #000;
 }
 
-/*** SERVICES PAGE: END ***/
-/*** PROJECTS PAGE: START ***/
-.projects-container {
+#vseen-section,
+section {
+  background-color: #000;
+}
+
+#vseen-section .icons-container,
+section .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  height: 40%;
+  position: relative;
+  top: 2rem;
+}
+
+#vseen-section .icons-container .icon-set,
+section .icons-container .icon-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
-  height: 76%;
-  margin: 0 auto;
-  overflow-y: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
 }
 
-.projects-container .project {
-  margin-bottom: 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 80%;
-          flex: 0 0 80%;
+#vseen-section .icons-container .icon-set .icon-box,
+section .icons-container .icon-set .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.projects-container .project .project-title {
-  color: #da1c85;
+#vseen-section .icons-container .icon-set .icon-box .icon,
+section .icons-container .icon-set .icon-box .icon {
+  width: 55%;
+  margin-top: 20px;
+  border-radius: 50%;
 }
 
-.projects-container .project .client-name {
+#vseen-section .icons-container .icon-set .icon-box .caption,
+section .icons-container .icon-set .icon-box .caption {
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #fff;
 }
 
-.projects-container .project img {
-  width: 100%;
-}
-
-/*** PROJECTS PAGE: END ***/
 /************************** MEDIA QUERIES **************************/
 /*** iPhone 6/7/8/ media query ***/
 @media only screen and (min-width: 375px) {
