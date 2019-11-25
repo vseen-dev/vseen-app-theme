@@ -17,9 +17,11 @@ li {
 	list-style-type: none;
 }
 
-.section {
+#vseen-section,
+#vpm-section,
+section {
 	height: 100vh;
-	background-color: #000;
+	// background-color: #000;
 
 	.other-header {
 		display: flex;
@@ -29,7 +31,7 @@ li {
 		.btn-back {
 			font-size: 3.5rem;
 			color: #fff;
-			margin: 10px 0 0 10px;
+			margin: 20px 0 0 10px;
 		}
 
 		img {
@@ -121,85 +123,6 @@ header {
 		color: #da1c85;
 	}
 }
-/*** NAVBAR: END ***/
-
-/*** HOMEPAGE: START ***/
-.root {
-	width: 100%;
-}
-
-#vseen {
-	display: flex;
-	height: 50vh;
-	background-color: #000;
-	justify-content: center;
-	align-items: center;
-
-	.vseen-logo {
-		display: flex;
-		justify-content: center;
-		width: 90%;
-		img {
-			width: 55%;
-		}
-	}
-}
-
-#village {
-	display: flex;
-	height: 50vh;
-	background-color: #fff;
-	justify-content: center;
-	align-items: center;
-
-	.village-logo {
-		display: flex;
-		justify-content: center;
-		width: 90%;
-		img {
-			width: 55%;
-		}
-	}
-}
-/*** HOMEPAGE: END ***/
-
-/*** SERVICES PAGE: START ***/
-.icons-container {
-	display: flex;
-	height: 40%;
-	position: relative;
-	top: 2rem;
-
-	.icon-set {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 50%;
-
-		.icon-box {
-			display: flex;
-			text-align: center;
-			flex-flow: column nowrap;
-			align-items: center;
-			border: 2px yellow solid;
-			.icon {
-				width: 55%;
-				background-color: #da1c85;
-				margin-top: 20px;
-				border-radius: 50%;
-			}
-			.caption {
-				font-size: 1.5rem;
-				font-weight: 600;
-				border: 1px greenyellow solid;
-				color: #fff;
-			}
-		}
-	}
-}
-
-/*** SERVICES PAGE: END ***/
 
 /*** PROJECTS PAGE: START ***/
 
@@ -233,6 +156,11 @@ header {
 }
 
 /*** PROJECTS PAGE: END ***/
+
+// Pages
+@import 'pages/homepage';
+@import 'pages/page-vpm-services';
+@import 'pages/page-vseen-services';
 
 /************************** MEDIA QUERIES **************************/
 
