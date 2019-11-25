@@ -8,6 +8,12 @@ function vseen_files() {
 
 add_action('wp_enqueue_scripts', 'vseen_files');
 
+function vseen_features() {
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'vseen_features');
+
 // * Debugger, log values to browser console
 function consoleLog($output, $description="DATA: ", $withScriptTags=true) {
   $jsCode = "console.log('$description'," . json_encode($output, JSON_HEX_TAG) . ");";
