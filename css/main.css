@@ -44,6 +44,12 @@ section .other-header .btn-back {
   margin: 20px 0 0 10px;
 }
 
+#vseen-section .other-header .section-heading,
+#vpm-section .other-header .section-heading,
+section .other-header .section-heading {
+  text-align: center;
+}
+
 #vseen-section .other-header img,
 #vpm-section .other-header img,
 section .other-header img {
@@ -214,11 +220,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
-}
-
-#vseen .vseen-logo img {
-  width: 55%;
 }
 
 #village {
