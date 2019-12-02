@@ -23,15 +23,14 @@ $currPage = get_queried_object();
             <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
             <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
           </svg>
-          <?php endif ?>
+          <?php endif; ?>
           <?php if ($currPage->post_name == 'vseen-services' or $currPage->post_parent == $parentId) : ?>
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
             <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
           </svg>
-          <?php endif ?>
-
+          <?php endif; ?>
         </a>
       </span>
     </nav>
@@ -41,8 +40,20 @@ $currPage = get_queried_object();
       <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
       <input type="search" placeholder="Search..." />
 
+      <h2>VSEEN</h2>
+      <ul>
+        <li><a href="<?= site_url('/website'); ?>">Website</a></li>
+        <li><a href="<?= site_url('/ar'); ?>">AR</a></li>
+        <li><a href="<?= site_url('/design'); ?>">Design</a></li>
+        <li><a href="<?= site_url('/video-production'); ?>">Video Production</a></li>
+        <li><a href="<?= site_url('/digital-publication'); ?>">Digital Publication</a></li>
+        <li><a href="<?= site_url('/animation'); ?>">Animation</a></li>
+        <li><a href="<?= site_url('/photography'); ?>">Photography</a></li>
+      </ul>
+
       <h2>Village Print</h2>
       <ul>
+        <!-- //! ADD LINKS LATER -->
         <li><a href="#">Large format</a></li>
         <li><a href="#">Trifolds</a></li>
         <li><a href="#">Books</a></li>
@@ -51,25 +62,20 @@ $currPage = get_queried_object();
         <li><a href="#">Specialty print</a></li>
         <li><a href="#">Custom packaging</a></li>
       </ul>
-
-      <h2>VSEEN</h2>
-      <ul>
-        <li><a href="#">Website</a></li>
-        <li><a href="#">AR</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Video Production</a></li>
-        <li><a href="#">Digital Publication</a></li>
-        <li><a href="#">Animation</a></li>
-        <li><a href="#">Photography</a></li>
-      </ul>
     </div>
     <!-- Sidebar Menu: End-->
   </header>
 
-  <?php if (!is_home()) : ?>
+  <?php if (!is_front_page()) : ?>
   <section class="section">
     <div class="other-header">
-      <a href="<?= get_permalink($parentId); ?>" class="btn-back">&lt;</a>
-      <img src="<?= get_theme_file_uri('/images/vseen-logo.png'); ?>" />
+      <?php if ($parentId == 0) :?>
+      <a class="btn-back" href="<?= site_url(); ?>">&lt;</a>
+      <?php else : ?>
+      <a class="btn-back" href="<?= get_permalink($parentId); ?>">&lt;</a>
+      <?php endif; ?>
+      <a class="section-heading" href="<?= site_url('/vseen-services'); ?>">
+        <img src="<?= get_theme_file_uri('/images/vseen-logo.png'); ?>" />
+      </a>
     </div>
     <? endif ?>
