@@ -17,15 +17,11 @@ li {
   list-style-type: none;
 }
 
-#vseen-section,
-#vpm-section,
-section {
+#vseen-section {
   height: 100vh;
 }
 
-#vseen-section .other-header,
-#vpm-section .other-header,
-section .other-header {
+#vseen-section .vseen-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,23 +32,17 @@ section .other-header {
   height: 15%;
 }
 
-#vseen-section .other-header .btn-back,
-#vpm-section .other-header .btn-back,
-section .other-header .btn-back {
+#vseen-section .vseen-header .btn-back {
   font-size: 3.5rem;
   color: #fff;
   margin: 20px 0 0 10px;
 }
 
-#vseen-section .other-header .section-heading,
-#vpm-section .other-header .section-heading,
-section .other-header .section-heading {
+#vseen-section .vseen-header .heading-logo {
   text-align: center;
 }
 
-#vseen-section .other-header img,
-#vpm-section .other-header img,
-section .other-header img {
+#vseen-section .vseen-header img {
   width: 30%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -60,9 +50,7 @@ section .other-header img {
   margin-top: 3rem;
 }
 
-#vseen-section .heading .service-name,
-#vpm-section .heading .service-name,
-section .heading .service-name {
+#vseen-section .heading .service-name {
   position: relative;
   top: 5px;
   color: #fff;
@@ -70,9 +58,7 @@ section .heading .service-name {
   margin-left: 8%;
 }
 
-#vseen-section .heading hr,
-#vpm-section .heading hr,
-section .heading hr {
+#vseen-section .heading hr {
   width: 93%;
   opacity: 0.5;
 }
@@ -250,11 +236,11 @@ header {
   width: 55%;
 }
 
-#vpm-section {
+.vpm-section {
   background-color: #fff;
 }
 
-#vpm-section .icons-container {
+.vpm-section .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +249,7 @@ header {
   top: 2rem;
 }
 
-#vpm-section .icons-container .icon-set {
+.vpm-section .icons-container .icon-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +266,7 @@ header {
   width: 50%;
 }
 
-#vpm-section .icons-container .icon-set .icon-box {
+.vpm-section .icons-container .icon-set .icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,25 +280,23 @@ header {
           align-items: center;
 }
 
-#vpm-section .icons-container .icon-set .icon-box .icon {
+.vpm-section .icons-container .icon-set .icon-box .icon {
   width: 55%;
   margin-top: 20px;
   border-radius: 50%;
 }
 
-#vpm-section .icons-container .icon-set .icon-box .caption {
+.vpm-section .icons-container .icon-set .icon-box .caption {
   font-size: 1.5rem;
   font-weight: 600;
   color: #000;
 }
 
-#vseen-section,
-section {
+#vseen-section {
   background-color: #000;
 }
 
-#vseen-section .icons-container,
-section .icons-container {
+#vseen-section .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,8 +305,7 @@ section .icons-container {
   top: 2rem;
 }
 
-#vseen-section .icons-container .icon-set,
-section .icons-container .icon-set {
+#vseen-section .icons-container .icon-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,8 +322,7 @@ section .icons-container .icon-set {
   width: 50%;
 }
 
-#vseen-section .icons-container .icon-set .icon-box,
-section .icons-container .icon-set .icon-box {
+#vseen-section .icons-container .icon-set .icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,15 +336,13 @@ section .icons-container .icon-set .icon-box {
           align-items: center;
 }
 
-#vseen-section .icons-container .icon-set .icon-box .icon,
-section .icons-container .icon-set .icon-box .icon {
+#vseen-section .icons-container .icon-set .icon-box .icon {
   width: 55%;
   margin-top: 20px;
   border-radius: 50%;
 }
 
-#vseen-section .icons-container .icon-set .icon-box .caption,
-section .icons-container .icon-set .icon-box .caption {
+#vseen-section .icons-container .icon-set .icon-box .caption {
   font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
@@ -424,3 +404,4 @@ section .icons-container .icon-set .icon-box .caption {
 }
 
 /*** Desktop ***/
+/*# sourceMappingURL=main.css.map */
