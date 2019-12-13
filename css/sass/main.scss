@@ -17,13 +17,11 @@ li {
 	list-style-type: none;
 }
 
-#vseen-section,
-#vpm-section,
-section {
+#vseen-section {
 	height: 100vh;
 	// background-color: #000;
 
-	.other-header {
+	.vseen-header {
 		display: flex;
 		flex-flow: column nowrap;
 		height: 15%;
@@ -34,7 +32,7 @@ section {
 			margin: 20px 0 0 10px;
 		}
 
-		.section-heading {
+		.heading-logo {
 			text-align: center;
 		}
 
