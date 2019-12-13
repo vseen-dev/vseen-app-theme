@@ -236,11 +236,11 @@ header {
   width: 55%;
 }
 
-.vpm-section {
+#vpm-section {
   background-color: #fff;
 }
 
-.vpm-section .icons-container {
+#vpm-section .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,7 +249,7 @@ header {
   top: 2rem;
 }
 
-.vpm-section .icons-container .icon-set {
+#vpm-section .icons-container .icon-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +266,7 @@ header {
   width: 50%;
 }
 
-.vpm-section .icons-container .icon-set .icon-box {
+#vpm-section .icons-container .icon-set .icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,13 +280,13 @@ header {
           align-items: center;
 }
 
-.vpm-section .icons-container .icon-set .icon-box .icon {
+#vpm-section .icons-container .icon-set .icon-box .icon {
   width: 55%;
   margin-top: 20px;
   border-radius: 50%;
 }
 
-.vpm-section .icons-container .icon-set .icon-box .caption {
+#vpm-section .icons-container .icon-set .icon-box .caption {
   font-size: 1.5rem;
   font-weight: 600;
   color: #000;
