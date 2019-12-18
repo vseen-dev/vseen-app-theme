@@ -8,6 +8,8 @@
 </head>
 
 <?php
+global $post;
+$currentSlug = $post->post_name;
 $parentId = wp_get_post_parent_id(get_the_ID());
 $currPage = get_queried_object();
 ?>
@@ -17,14 +19,14 @@ $currPage = get_queried_object();
     <nav class="navbar">
       <span class="open-slide" onclick="openSlideMenu()">
         <a href="#">
-          <?php if ($currPage->post_name == 'vpm-services' or $currPage->post_parent == $parentId) : ?>
+          <?php if ($currentSlug == 'vpm-services' or $currPage->post_parent == $parentId) : ?>
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
             <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
           </svg>
           <?php endif; ?>
-          <?php if ($currPage->post_name == 'vseen-services' or $currPage->post_parent == $parentId) : ?>
+          <?php if ($currentSlug == 'vseen-services' or $currPage->post_parent == $parentId) : ?>
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
@@ -67,15 +69,17 @@ $currPage = get_queried_object();
   </header>
 
   <?php if (!is_front_page()) : ?>
-  <section class="section">
-    <div class="other-header">
-      <?php if ($parentId == 0) :?>
+  <section id="vseen-section">
+    <div class="vseen-header">
+      <?php if ($currentSlug === 'vseen-services') : ?>
       <a class="btn-back" href="<?= site_url(); ?>">&lt;</a>
-      <?php else : ?>
+      <?php elseif ($parentId !== 0 and $currentSlug !== 'vseen-services' and $currentSlug !== 'home') : consoleLog('Parent does not equal 0'); ?>
       <a class="btn-back" href="<?= get_permalink($parentId); ?>">&lt;</a>
+      <?php else : consoleLog('Parent equals 0'); ?>
+      <a class="btn-back" href="<?= wp_get_referer(); ?>">&lt;</a>
       <?php endif; ?>
-      <a class="section-heading" href="<?= site_url('/vseen-services'); ?>">
+      <a class="heading-logo" href="<?= site_url(); ?>">
         <img src="<?= get_theme_file_uri('/images/vseen-logo.png'); ?>" />
       </a>
     </div>
-    <? endif ?>
+    <?php endif; ?>
