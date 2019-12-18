@@ -1,0 +1,28 @@
+.projects-container {
+	// border: 2px dotted red;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 90%;
+	height: 76%;
+	margin: 0 auto;
+	overflow-y: auto;
+
+	.project {
+		// border: 1px solid yellow;
+		margin-bottom: 10px;
+		flex: 0 0 80%;
+
+		.project-title {
+			color: #da1c85;
+		}
+
+		.client-name {
+			color: #fff;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
