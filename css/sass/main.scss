@@ -125,44 +125,14 @@ header {
 		color: #da1c85;
 	}
 }
-
-/*** PROJECTS PAGE: START ***/
-
-.projects-container {
-	// border: 2px dotted red;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	width: 90%;
-	height: 76%;
-	margin: 0 auto;
-	overflow-y: auto;
-
-	.project {
-		// border: 1px solid yellow;
-		margin-bottom: 10px;
-		flex: 0 0 80%;
-
-		.project-title {
-			color: #da1c85;
-		}
-
-		.client-name {
-			color: #fff;
-		}
-
-		img {
-			width: 100%;
-		}
-	}
-}
-
-/*** PROJECTS PAGE: END ***/
+/*** NAVBAR: END ***/
 
 // Pages
 @import 'pages/homepage';
 @import 'pages/page-vpm-services';
 @import 'pages/page-vseen-services';
+@import 'pages/vseen-projects';
+@import 'pages/vseen-single-project';
 
 /************************** MEDIA QUERIES **************************/
 
