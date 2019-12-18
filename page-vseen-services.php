@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<!--Section-->
 <div class="icons-container">
   <div class="icon-set">
     <div class="icon-box">
@@ -56,7 +55,6 @@
       <p class="caption">Animation</p>
     </div>
   </div>
-</div>
 </div>
 
 <?php get_footer(); ?>
