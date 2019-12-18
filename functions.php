@@ -15,6 +15,9 @@ function vseen_features() {
 
 add_action('after_setup_theme', 'vseen_features');
 
+// * Hide admin bar
+add_filter('show_admin_bar', '__return_false');
+
 // * Debugger, log values to browser console
 function consoleLog($output, $description="DATA: ", $withScriptTags=true) {
   $jsCode = "console.log('$description'," . json_encode($output, JSON_HEX_TAG) . ");";
