@@ -19,14 +19,14 @@ $currPage = get_queried_object();
     <nav class="navbar">
       <span class="open-slide" onclick="openSlideMenu()">
         <a href="#">
-          <?php if ($currentSlug == 'vpm-services' or $currPage->post_parent == $parentId) : ?>
+          <?php if ($currPage->post_name == 'vpm-services' or $currPage->post_parent == $parentId) : ?>
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
             <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
           </svg>
           <?php endif; ?>
-          <?php if ($currentSlug == 'vseen-services' or $currPage->post_parent == $parentId) : ?>
+          <?php if ($currPage->post_name == 'vseen-services' or $currPage->post_parent == $parentId) : ?>
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
