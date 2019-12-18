@@ -1,0 +1,60 @@
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+#vseen-section {
+	height: 100vh;
+	// background-color: #000;
+
+	.vseen-header {
+		display: flex;
+		flex-flow: column nowrap;
+		height: 15%;
+		// border: 1px solid red;
+		.btn-back {
+			font-size: 3.5rem;
+			color: #fff;
+			margin: 20px 0 0 10px;
+		}
+
+		.heading-logo {
+			text-align: center;
+		}
+
+		img {
+			width: 30%;
+			align-self: center;
+			margin-top: 3rem;
+		}
+	}
+
+	.heading {
+		// border: 1px solid yellow;
+		.service-name {
+			position: relative;
+			top: 5px;
+			color: #fff;
+			font-size: 1.6rem;
+			margin-left: 8%;
+		}
+
+		hr {
+			width: 93%;
+			opacity: 0.5;
+		}
+	}
+}
