@@ -1,4 +1,3 @@
-/*** BASE: START ***/
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
@@ -63,8 +62,34 @@ li {
   opacity: 0.5;
 }
 
-/*** BASE: END ***/
-/*** NAVBAR: START ***/
+/*** *** VSEEN Colors *** ***/
+/*** *** Village Colors *** ***/
+/*** *** Util Colors *** ***/
+/* *** MEDIA QUERY MANAGER *** */
+/*
+  0   - 370px:    Extra small phone
+  370 - 440px:    Small phone
+  440 - 500px:    Phone
+  500 - 600px:    Big phone
+  600 - 700px:    Small tablet portait
+  700 - 768px:    iPad portrait
+  768 - 800px:    Big iPad portrait
+  800 - 900px:    Tablet portrait
+  900 - 1200px:   Tablet landscape
+  [1200 - 1800] is where our normal styles apply
+  1800px + :      Big desktop
+
+  $breakpoint arguement choices:
+  - xs-phone
+  - sm-phone
+  - phone
+  - sm-tab-port
+  - ipad-port
+  - big-ipad-port
+  - tab-port
+  - tab-land
+  - big-desktop
+*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,7 +168,6 @@ header {
   color: #da1c85;
 }
 
-/*** NAVBAR: END ***/
 .root {
   width: 100%;
 }
