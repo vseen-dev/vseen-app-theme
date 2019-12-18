@@ -143,44 +143,7 @@ header {
   color: #da1c85;
 }
 
-/*** PROJECTS PAGE: START ***/
-.projects-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 90%;
-  height: 76%;
-  margin: 0 auto;
-  overflow-y: auto;
-}
-
-.projects-container .project {
-  margin-bottom: 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 80%;
-          flex: 0 0 80%;
-}
-
-.projects-container .project .project-title {
-  color: #da1c85;
-}
-
-.projects-container .project .client-name {
-  color: #fff;
-}
-
-.projects-container .project img {
-  width: 100%;
-}
-
-/*** PROJECTS PAGE: END ***/
+/*** NAVBAR: END ***/
 .root {
   width: 100%;
 }
@@ -348,6 +311,80 @@ header {
   color: #fff;
 }
 
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 76%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.projects-container .project {
+  margin-bottom: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+}
+
+.projects-container .project .project-title {
+  color: #da1c85;
+}
+
+.projects-container .project .client-name {
+  color: #fff;
+}
+
+.projects-container .project img {
+  width: 100%;
+}
+
+.single-project {
+  border: 2px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 10rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.single-project .project-content {
+  border: 1px solid blue;
+}
+
+.single-project .project-title {
+  border: 1px solid limegreen;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 12rem;
+  color: #da1c85;
+}
+
+.single-project .project-client {
+  border: 1px solid pink;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 12rem;
+  color: #fff;
+}
+
 /************************** MEDIA QUERIES **************************/
 /*** iPhone 6/7/8/ media query ***/
 @media only screen and (min-width: 375px) {
@@ -404,4 +441,3 @@ header {
 }
 
 /*** Desktop ***/
-/*# sourceMappingURL=main.css.map */
