@@ -17,7 +17,7 @@ $currPage = get_queried_object();
 <body <?php body_class(); ?>>
   <header>
     <nav class="navbar">
-      <span class="open-slide" onclick="openSlideMenu()">
+      <span id="open-slide" class="open-slide">
         <a href="#">
           <?php if ($currPage->post_name == 'vpm-services' or $currPage->post_parent == $parentId) : ?>
           <svg width="30" height="30">
@@ -39,7 +39,7 @@ $currPage = get_queried_object();
 
     <!-- Sidebar Menu: Start-->
     <div id="slide-menu" class="side-nav">
-      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a id="close-slide" class="close-slide" href="#">&times;</a>
       <input type="search" placeholder="Search..." />
 
       <h2>VSEEN</h2>
