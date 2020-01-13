@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<section id="vseen-section">
 <?php while(have_posts()) : the_post(); ?>
 
 <div class="single-project">
@@ -9,4 +9,5 @@
 </div>
 
 <?php endwhile; ?>
+</section>
 <?php get_footer(); ?>
