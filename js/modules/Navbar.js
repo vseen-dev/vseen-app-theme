@@ -20,8 +20,6 @@ class Navbar {
 
   closeSlideMenu() {
     this.sideBar.style.width = '0';
-    console.log('hello from closeSlideMenu!')
-    console.log('SideBar: ', this.sideBar);
   }
 }
 
