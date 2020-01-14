@@ -63,9 +63,9 @@ consoleLog($parentId, 'Parent ID: ');
         <span id="open-slide" class="open-slide float-right">
           <a href="#">
             <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="1" />
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="1" />
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="1" />
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="2" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="2" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="2" />
             </svg>
           </a>
         </span>
@@ -73,9 +73,9 @@ consoleLog($parentId, 'Parent ID: ');
         <span id="open-slide" class="open-slide">
           <a href="#">
             <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#000" stroke-width="1" />
-              <path d="M0,14 30,14" stroke="#000" stroke-width="1" />
-              <path d="M0,23 30,23" stroke="#000" stroke-width="1" />
+              <path d="M0,5 30,5" stroke="#000" stroke-width="2" />
+              <path d="M0,14 30,14" stroke="#000" stroke-width="2" />
+              <path d="M0,23 30,23" stroke="#000" stroke-width="2" />
             </svg>
           </a>
         </span>
@@ -83,9 +83,9 @@ consoleLog($parentId, 'Parent ID: ');
         <span id="open-slide" class="open-slide">
           <a href="#">
             <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="1" />
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="1" />
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="1" />
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="2" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="2" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="2" />
             </svg>
           </a>
         </span>
