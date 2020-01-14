@@ -10,7 +10,7 @@ $queryArgs = array(
   "category_name" => "$the_title",
   "posts_per_page" => 3,
   "paged" => $paged,
-  "order" => "ASC"
+  "order" => "DESC"
 );
 
 $the_query = new WP_Query($queryArgs);
