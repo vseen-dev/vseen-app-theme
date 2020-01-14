@@ -1,28 +1,30 @@
-.single-project {
-	border: 2px solid yellow; // ! DEV Border
-	display: flex;
-	position: relative;
-	top: 10rem;
-	flex-flow: column nowrap;
-	align-items: center;
-	width: 80%;
-	margin: 0 auto;
-
-	.project-content {
-		border: 1px solid blue; // ! DEV Border
-	}
-
-	.project-title {
-		border: 1px solid limegreen; // ! DEV Border
-		align-self: flex-start;
-		margin-left: 12rem;
-		color: #da1c85;
-	}
-
-	.project-client {
-		border: 1px solid pink; // ! DEV Border
-		align-self: flex-start;
-		margin-left: 12rem;
-		color: #fff;
-	}
+#vseen-section {
+  .single-project {
+    border: 2px solid yellow; // ! DEV Border
+    display: flex;
+    position: relative;
+    top: 10rem;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  
+    .project-content {
+      border: 1px solid blue; // ! DEV Border
+    }
+  
+    .project-title {
+      border: 1px solid limegreen; // ! DEV Border
+      align-self: flex-start;
+      margin-left: 12rem;
+      color: $vseen-color-primary;
+    }
+  
+    .project-client {
+      border: 1px solid pink; // ! DEV Border
+      align-self: flex-start;
+      margin-left: 12rem;
+      color: $vseen-color-text;
+    }
+  }  
 }
