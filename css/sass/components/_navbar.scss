@@ -3,11 +3,35 @@ header {
 	justify-content: flex-end;
 }
 .navbar {
-	overflow: hidden;
-	position: absolute;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  clear: both;
+
 	svg {
 		padding: 20px;
-	}
+  }
+  .btn-back {
+    display: inline;
+    font-size: 2.5rem;
+    // margin: 10px 0 0 10px;
+    padding: 20px;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .black {
+    color: #000;
+  }
+
+  .float-right {
+    float: right;
+  }
 }
 
 .side-nav {
