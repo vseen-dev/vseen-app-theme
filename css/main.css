@@ -158,8 +158,9 @@ header {
 
 .navbar .btn-back {
   display: inline;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 20px;
+  font-weight: 100;
 }
 
 .navbar .white {
@@ -483,12 +484,11 @@ header {
 }
 
 #vpm-section .single-project {
-  border: 2px solid yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  top: 10rem;
+  top: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -502,21 +502,19 @@ header {
 
 #vpm-section .single-project .project-content {
   border: 1px solid blue;
+  margin-top: 2rem;
 }
 
 #vpm-section .single-project .project-title {
-  border: 1px solid limegreen;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 12rem;
   color: #2d95c8;
+  margin-bottom: 0;
 }
 
 #vpm-section .single-project .project-client {
-  border: 1px solid pink;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 12rem;
   color: #000;
 }
 
@@ -598,12 +596,11 @@ header {
 }
 
 #vseen-section .single-project {
-  border: 2px solid yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  top: 10rem;
+  top: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -617,22 +614,18 @@ header {
 
 #vseen-section .single-project .project-content {
   border: 1px solid blue;
+  margin-top: 2rem;
 }
 
 #vseen-section .single-project .project-title {
-  border: 1px solid limegreen;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 12rem;
   color: #da1c85;
+  margin-bottom: 0;
 }
 
 #vseen-section .single-project .project-client {
-  border: 1px solid pink;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-left: 12rem;
   color: #ffffff;
 }
-
-/************************** MEDIA QUERIES **************************/
