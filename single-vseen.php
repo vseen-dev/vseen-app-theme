@@ -4,8 +4,8 @@
 
   <div class="single-project">
     <h2 class="project-title"><?= the_title(); ?></h2>
-    <h3 class="project-client"><?= the_excerpt(); ?></h3>
-    <div class="project-content"><?= the_content(); ?></div>
+    <h3 class="project-client"><?= get_the_excerpt(); ?></h3>
+    <div class="project-content"><?= get_the_content(); ?></div>
   </div>
 
   <?php endwhile; ?>
