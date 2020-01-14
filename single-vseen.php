@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 <section id="vseen-section">
+
+  <div class="vseen-header">
+    <a class="heading-logo" href="<?= site_url(); ?>">
+      <img src="<?= get_theme_file_uri('/images/vseen-logo.png'); ?>" />
+    </a>
+  </div>
   <?php while(have_posts()) : the_post(); ?>
 
   <div class="single-project">
