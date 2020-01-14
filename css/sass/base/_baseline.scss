@@ -21,15 +21,19 @@ li {
 	// background-color: #000;
 
 	.vseen-header {
+		position: relative;
+		top: 5rem;
 		display: flex;
 		flex-flow: column nowrap;
 		height: 15%;
 		// border: 1px solid red;
-		.btn-back {
-			font-size: 3.5rem;
-			color: #fff;
-			margin: 20px 0 0 10px;
-		}
+
+		// .btn-back {
+		// 	display: inline;
+		// 	font-size: 2.5rem;
+		// 	color: #fff;
+		// 	margin: 10px 0 0 10px;
+		// }
 
 		.heading-logo {
 			text-align: center;
@@ -38,7 +42,53 @@ li {
 		img {
 			width: 30%;
 			align-self: center;
-			margin-top: 3rem;
+			margin-top: 1rem;
+		}
+	}
+
+	.heading {
+		// border: 1px solid yellow;
+		.service-name {
+			position: relative;
+      top: 5px;
+			font-size: 1.6rem;
+			margin-left: 8%;
+		}
+
+		hr {
+			width: 93%;
+			opacity: 0.5;
+		}
+	}
+}
+
+#vpm-section {
+	height: 100vh;
+	// background-color: #000;
+
+	.vpm-header {
+		position: relative;
+		top: 5rem;
+		display: flex;
+		flex-flow: column nowrap;
+		height: 15%;
+		// border: 1px solid red;
+
+		// .btn-back {
+		// 	display: inline;
+		// 	font-size: 2.5rem;
+		// 	color: #fff;
+		// 	margin: 10px 0 0 10px;
+		// }
+
+		.heading-logo {
+			text-align: center;
+		}
+
+		img {
+			width: 30%;
+			align-self: center;
+			margin-top: 1rem;
 		}
 	}
 
@@ -47,7 +97,6 @@ li {
 		.service-name {
 			position: relative;
 			top: 5px;
-			color: #fff;
 			font-size: 1.6rem;
 			margin-left: 8%;
 		}
