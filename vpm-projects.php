@@ -33,9 +33,12 @@ $the_query = new WP_Query($queryArgs);
   <div class="projects-container">
     <?php if ($the_query->have_posts()) : ?>
     <?php while($the_query->have_posts()) : $the_query->the_post(); ?>
+    <?php 
+      $client_name = get_post_meta($the_query->post->ID, 'client_name', true);
+    ?>
     <div class="project">
       <h2 class="project-title"><?= get_the_title();?></h2>
-      <h3 class="client-name"><?= get_the_excerpt(); ?></h3>
+      <h3 class="client-name"><?= $client_name; ?></h3>
       <a href="<?php the_permalink(); ?>"><?= get_the_post_thumbnail() ?></a>
     </div>
     <?php endwhile; 
