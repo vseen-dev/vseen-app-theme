@@ -96,7 +96,7 @@ consoleLog($parentId, 'Parent ID: ');
       <!-- Sidebar Menu: Start-->
       <div id="slide-menu" class="side-nav">
         <a id="close-slide" class="close-slide" href="#">&times;</a>
-        <input type="search" placeholder="Search..." />
+        <!-- <input type="search" placeholder="Search..." /> -->
 
         <h2>VSEEN</h2>
         <ul>
