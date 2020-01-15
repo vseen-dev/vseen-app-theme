@@ -45,10 +45,17 @@ header {
 	background-color: #eeeeef;
 	overflow-x: hidden;
 	transition: 0.5s;
-	// align-items: center;
 
 	.close-slide {
 		font-size: 3.5rem;
+		padding: 10px;
+		text-decoration: none;
+		color: #a0a0a0;
+		transition: 0.3s;
+
+		&:hover {
+			color: $vseen-color-primary;
+		}
 	}
 
 	input {
@@ -66,22 +73,23 @@ header {
 		margin-left: 20px;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		font-size: 3rem;
-	}
-
-	li {
-		margin-bottom: 1.8rem;
-	}
-
-	a {
-		padding: 10px;
-		text-decoration: none;
 		font-size: 2rem;
-		color: #a0a0a0;
-		transition: 0.3s;
 	}
 
-	a:hover {
-		color: #da1c85;
+	ul {
+		margin-bottom: 0;
+		li {
+			margin-bottom: 1.8rem;
+			a {
+				padding: 10px;
+				text-decoration: none;
+				font-size: 1.4rem;
+				color: #a0a0a0;
+				transition: 0.3s;
+				&:hover {
+					color: $vseen-color-primary;
+				}
+			}
+		}
 	}
 }
