@@ -196,6 +196,15 @@ header {
 
 .side-nav .close-slide {
   font-size: 3.5rem;
+  padding: 10px;
+  text-decoration: none;
+  color: #a0a0a0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.side-nav .close-slide:hover {
+  color: #da1c85;
 }
 
 .side-nav input {
@@ -215,23 +224,27 @@ header {
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.side-nav li {
+.side-nav ul {
+  margin-bottom: 0;
+}
+
+.side-nav ul li {
   margin-bottom: 1.8rem;
 }
 
-.side-nav a {
+.side-nav ul li a {
   padding: 10px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #a0a0a0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.side-nav a:hover {
+.side-nav ul li a:hover {
   color: #da1c85;
 }
 
